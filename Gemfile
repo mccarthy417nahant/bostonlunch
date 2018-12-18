@@ -14,6 +14,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
+gem 'carrierwave', '~> 0.11.2'
+gem 'fog', '~> 2.1'
+gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
