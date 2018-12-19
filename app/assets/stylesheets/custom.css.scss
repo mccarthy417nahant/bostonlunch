@@ -22,3 +22,18 @@
 .container-fluid {
   padding: 10px 120px;
 }
+
+.form-inline{
+  .form-control{
+    .btn-outline-success{
+      color: #27613A;
+    }
+  }
+}
+
+.navbar-nav{
+  li a{
+    color: black !important;
+    padding: 5px;
+  }
+}
