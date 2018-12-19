@@ -18,6 +18,7 @@ gem 'carrierwave', '~> 0.11.2'
 gem 'fog', '~> 2.1'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'mini_magick'
+gem 'devise', '~> 4.5'
 
 
 group :development, :test do
