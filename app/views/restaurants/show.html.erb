@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-6">
     <%= image_tag @restaurant.image_url %>
 
     <h2>
@@ -24,7 +24,7 @@
     <%= link_to "Add a Review", new_restaurant_review_path(@restaurant), class: "btn btn-primary"%>
   </div>
 
-  <div class="col-md-8">
+  <div class="col-md-6">
     <% if @reviews.blank? %>
       <h3> No reviews yet.  Be the first to write one!</h3>
     <% else %>
