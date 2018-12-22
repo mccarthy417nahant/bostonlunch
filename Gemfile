@@ -19,6 +19,7 @@ gem 'fog', '~> 2.1'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'mini_magick'
 gem 'devise', '~> 4.5'
+gem 'searchkick'
 
 
 group :development, :test do

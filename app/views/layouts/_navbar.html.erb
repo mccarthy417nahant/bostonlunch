@@ -13,10 +13,16 @@
         <a class="nav-link" href="/pages/contact">Contact</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <%= form_tag search_restaurants_path, method: :get, class: "form-inline my-2 my-lg-0" do %>
+      <p>
+        <%= text_field_tag :search, params[:search], class: "form-control" %>
+        <%= submit_tag "Search", name: nil, class: "btn btn-default" %>
+      </p>
+    <%end%>
+    <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    </form> -->
     <ul class="nav navbar-nav navbar-right">
       <% if user_signed_in? %>
         <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
